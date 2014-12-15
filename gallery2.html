@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link type="text/css" rel="stylesheet" href="stylesheet.css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$.ajaxSetup({cache: false});
+		var images = ["imgb/1.jpg", "imgb/2.jpg", "imgb/3.jpg", "imgb/4.jpg", "imgb/5.jpg", "imgb/6.jpg", "imgb/7.jpg", "imgb/8.jpg", "imgb/9.jpg", "imgb/10.jpg", "imgb/11.jpg"];
+		var currentImage = 0;
+		
+		$("#img1").attr("src", images[currentImage]);
+		$("#img2").attr("src", images[currentImage + 1]);
+		$("#img3").attr("src", images[currentImage + 2]);
+		$("#back").click(function(){
+			if(currentImage != 0){
+				currentImage--;
+				$("#img1").attr("src", images[currentImage]);
+				$("#img2").attr("src", images[currentImage + 1]);
+				$("#img3").attr("src", images[currentImage + 2]);
+			}
+		});
+		$("#forward").click(function(){
+			if(currentImage != images.length - 3){
+				currentImage++;
+				$("#img1").attr("src", images[currentImage]);
+				$("#img2").attr("src", images[currentImage + 1]);
+				$("#img3").attr("src", images[currentImage + 2]);
+			}
+		});
+	});
+</script>
+</head>
+<body>
+<div id="big_wrapper">
+	<header id="top_header">
+		
+	</header>
+	
+	<nav id="top_menu"> 
+		<ul>
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="photo.html">Фотки</a></li>
+			<li><a href="gallery2.html">Статьи</a></li>
+		</ul>
+	</nav>
+	
+	<div id="new_div">
+	<div class="menu">
+		<div id="back"></div>
+		<div class="wrapper">			
+			<img id="img1" src="" />
+			<img id="img2" src="" />
+			<img id="img3" src="" />			
+		</div>
+		<div id="forward"></div>
+	</div>
+	
+	</div>
+	
+	<footer id="footer">
+		Designed by Viktor Moroz
+	</footer>
+</div>
+</body>
+</html>
