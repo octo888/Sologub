@@ -5,33 +5,6 @@
 <title>Insert title here</title>
 <link type="text/css" rel="stylesheet" href="stylesheet.css" />
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-<script type="text/javascript">
-	$(document).ready(function(){
-		$.ajaxSetup({cache: false});
-		var images = ["imgb/1.jpg", "imgb/2.jpg", "imgb/3.jpg", "imgb/4.jpg", "imgb/5.jpg", "imgb/6.jpg", "imgb/7.jpg", "imgb/8.jpg", "imgb/9.jpg", "imgb/10.jpg", "imgb/11.jpg"];
-		var currentImage = 0;
-		
-		$("#img1").attr("src", images[currentImage]);
-		$("#img2").attr("src", images[currentImage + 1]);
-		$("#img3").attr("src", images[currentImage + 2]);
-		$("#back").click(function(){
-			if(currentImage != 0){
-				currentImage--;
-				$("#img1").attr("src", images[currentImage]);
-				$("#img2").attr("src", images[currentImage + 1]);
-				$("#img3").attr("src", images[currentImage + 2]);
-			}
-		});
-		$("#forward").click(function(){
-			if(currentImage != images.length - 3){
-				currentImage++;
-				$("#img1").attr("src", images[currentImage]);
-				$("#img2").attr("src", images[currentImage + 1]);
-				$("#img3").attr("src", images[currentImage + 2]);
-			}
-		});
-	});
-</script>
 </head>
 <body>
 <div id="big_wrapper">
@@ -64,5 +37,32 @@
 		Designed by Viktor Moroz
 	</footer>
 </div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$.ajaxSetup({cache: false});
+		var images = ["imgb/1.jpg", "imgb/2.jpg", "imgb/3.jpg", "imgb/4.jpg", "imgb/5.jpg", "imgb/6.jpg", "imgb/7.jpg", "imgb/8.jpg", "imgb/9.jpg", "imgb/10.jpg", "imgb/11.jpg"];
+		var currentImage = 0;
+		
+		$("#img1").attr("src", images[currentImage]);
+		$("#img2").attr("src", images[currentImage + 1]);
+		$("#img3").attr("src", images[currentImage + 2]);
+		$("#back").click(function(){
+			if(currentImage != 0){
+				currentImage--;
+				$("#img1").attr("src", images[currentImage]);
+				$("#img2").attr("src", images[currentImage + 1]);
+				$("#img3").attr("src", images[currentImage + 2]);
+			}
+		});
+		$("#forward").click(function(){
+			if(currentImage != images.length - 3){
+				currentImage++;
+				$("#img1").attr("src", images[currentImage]);
+				$("#img2").attr("src", images[currentImage + 1]);
+				$("#img3").attr("src", images[currentImage + 2]);
+			}
+		});
+	});
+</script>
 </body>
 </html>
