@@ -40,6 +40,7 @@ body {
 	background: url("img/back2.jpg");
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;	
+	border-radius: 15px;
 }
 #top_menu {
 	border: red;
@@ -74,6 +75,7 @@ body {
 	-webkit-border-radius: 15px;
 	-moz-box-flex: 1;
 	-moz-border-radius: 15px;
+	border-radius: 15px;
 	margin: 20px;
 	padding: 10px;
 	background: #FFFFFF;
@@ -100,6 +102,7 @@ article {
 	margin-bottom: 15px;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
+	border-radius: 15px;
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	box-shadow: 1px 1px 2px #000;
@@ -120,19 +123,21 @@ article {
 
 
 #gallery {
-	margin-top: 20px;
-	padding: 20px auto;
-	padding-left: 140px;
+	padding-left: 55px;
+	padding-right: 30px;
 	display: -webkit-box;
 	-webkit-box-orient: horizontal;
 	-webkit-box-flex: 1;
 	-webkit-border-radius: 15px;
+	
 	display: -moz-box;
 	-moz-box-orient: horizontal;
 	-moz-box-flex: 1;
 	-moz-border-radius: 15px;
+	border-radius: 15px;
+	
 	box-shadow: 1px 1px 2px #000;
-	background: #33CCCC;
+	background: #EEEEEE;
 	
 }
 
@@ -152,60 +157,13 @@ article {
 	border: 1px solid #CCCCCC;
 	box-shadow: 1px 1px 2px #000;
 	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 	
 }
 #gallery img:HOVER {
 	border: 1px solid #fff;
 }
 
-.menu {
-	width: 1000px;
-	height: 200px;
-	margin: 20px;
-	display: -webkit-box;
-	-webkit-box-pack: center;
-	display: -moz-box;
-	-moz-box-pack: center;
-}
-
-.wrapper {
-	-webkit-box-orient: horizontal;
-	width: 450px;
-	height: 180px;
-	background: #CCCCCC;
-	 
-}
-
-.wrapper img{
-	width: 120px;
-	height: 180px;
-	margin-left: 20px;
-	-webkit-box-shadow: 3px 3px 2px #000;
-	-moz-box-shadow: 3px 3px 2px #000;
-}
-button {
-	background: #FFFFFF;
-}
-#back {
-	width: 0;
-    height: 0;
-    border-top: 50px solid transparent;
-    border-right: 100px solid #CCCCCC;
-    border-bottom: 50px solid transparent;
-	margin-right: 20px;
-	margin-top: 50px;
-	cursor: pointer;
-	
-}
-#forward {
-	width: 0;
-    height: 0;
-    border-top: 50px solid transparent;
-    border-left: 100px solid #CCCCCC;
-    border-bottom: 50px solid transparent;
-	margin-left: 20px;
-	margin-top: 50px;
-	cursor: pointer;
-}
 
 
